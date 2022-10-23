@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     
+     
+    .outer {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border: 40px solid red;
+        border-radius: 100%;
+    }
+    .outer::after{
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border: 30px solid orange;
+        border-radius: 100%;
+        bottom: -4px;
+        left: -4px;
+    }
+
+    .inner{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 25px solid rgb(251, 255, 0);
+        border-radius: 100%;
+        top: 24px;
+        left: 26px;
+
+    }
+    .inner::after{
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border: 25px solid rgb(43, 255, 0);
+        border-radius: 100%;
+    }
+    
+    .middle{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 30px solid rgb(0, 38, 255);
+        border-radius: 100%;
+        left: 20px;
+        top: 20px;
+    }
+    .middle::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 30px solid purple;
+        border-radius: 100%;
+        bottom: -5px;
+        left: -5px;
+        background-color: purple;
+    }
+    
+</style>
+
+<body>
+    
+    <div class="outer">
+        <div class="inner">
+            <div class="middle">
+
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
